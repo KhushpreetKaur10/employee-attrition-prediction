@@ -1,69 +1,128 @@
-# 👨‍💼 Employee Attrition Prediction System
+# 👨‍💼 Employee Attrition Analysis & Prediction System
 
-A complete Machine Learning project that predicts whether an employee is likely to leave a company using IBM HR Analytics dataset.
+An end-to-end **Machine Learning and Data Science project** that analyzes employee attrition patterns and builds predictive models using the IBM HR Analytics dataset.
 
-This project demonstrates an end-to-end ML pipeline:
-- Data preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Model training & selection
-- Evaluation metrics
-- Streamlit web app deployment
+The project emphasizes **hypothesis-driven exploratory data analysis (EDA)**, statistical validation, and a production-style ML pipeline with deployment.
 
 ---
 
 # 📊 Dataset
 
-**Source:** IBM HR Analytics Employee Attrition & Performance (Kaggle)
-
-- 1470 records
-- 35 features
-- Target: Attrition (Yes / No)
-
----
-
-# 🚀 Workflow
-
-1. Load dataset
-2. Clean & preprocess data
-3. Encode categorical variables
-4. Scale features
-5. Train multiple ML models
-6. Select best model
-7. Evaluate performance
-8. Deploy using Streamlit
+- Source: IBM HR Analytics Employee Attrition Dataset
+- Records: 1470 employees
+- Features: 35 attributes
+- Target Variable: Attrition (Yes/No)
 
 ---
 
-# 🧠 Models Used
+# 🎯 Objectives
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Gradient Boosting
-- KNN
-- SVM
+- Understand key drivers of employee attrition  
+- Validate hypotheses using statistical analysis  
+- Build predictive machine learning models  
+- Deploy a real-time inference system  
 
 ---
 
-# 🏆 Best Model
+# 🧪 Exploratory Data Analysis (EDA)
 
-The best performing model is automatically saved as:
+The analysis includes both visual and statistical exploration of workforce behavior.
 
-```
-models/best_model.pkl
-```
+## Key Analyses:
+- Attrition distribution analysis  
+- OverTime vs Attrition relationship  
+- Income and tenure-based patterns  
+- Correlation heatmap of numerical features  
+
+## Hypotheses Tested:
+- H1: Employees working overtime have higher attrition rates  
+- H2: Lower income is associated with higher attrition  
+- H3: Employees with fewer years at the company are more likely to leave  
+
+## Statistical Validation:
+- Chi-square test for independence between categorical variables  
+- p-value analysis to determine statistical significance of OverTime vs Attrition relationship  
 
 ---
 
-# 📈 Evaluation Metrics
+# 📈 Feature Insights
 
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC Curve
-- Confusion Matrix
+Feature importance analysis identified key drivers of attrition:
+
+- OverTime  
+- MonthlyIncome  
+- JobSatisfaction  
+- YearsAtCompany  
+- WorkLifeBalance  
+
+---
+
+# 🤖 Machine Learning Models
+
+The following classification models were evaluated:
+
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- Gradient Boosting  
+- K-Nearest Neighbors  
+- Support Vector Machine  
+
+---
+
+# 🏆 Model Selection Strategy
+
+Models were compared using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+- ROC-AUC  
+
+The best-performing model was selected and serialized for deployment.
+
+---
+
+# 🏗️ System Architecture
+
+Raw Data  
+→ Data Preprocessing (Encoding + Scaling)  
+→ Exploratory Data Analysis + Hypothesis Testing  
+→ Model Training & Evaluation  
+→ Best Model Selection  
+→ Model Serialization (Scaler + Feature Pipeline + Model)  
+→ Streamlit Deployment  
+
+---
+
+# 📊 Evaluation Metrics
+
+- Confusion Matrix  
+- Classification Report  
+- ROC Curve  
+- Feature Importance Analysis  
+
+---
+
+# 🧠 Key Technical Contributions
+
+- Built a reproducible end-to-end ML pipeline with modular architecture  
+- Ensured consistent preprocessing between training and inference  
+- Introduced hypothesis-driven EDA with statistical validation  
+- Implemented automated model comparison and selection pipeline  
+- Developed real-time Streamlit-based prediction system  
+
+---
+
+# 🖥️ Streamlit Application
+
+Features:
+
+- Input employee attributes dynamically  
+- Predict attrition probability  
+- Risk classification (Low / Medium / High)  
+- Real-time probability visualization  
 
 ---
 
@@ -141,17 +200,6 @@ streamlit run app.py
 
 ---
 
-# 🖥️ Streamlit App Features
-
-- Input employee details
-- Predict attrition (Yes/No)
-- Shows probability score
-- Risk classification:
-  - Low Risk
-  - Medium Risk
-  - High Risk
-
----
 
 # 📸 Outputs
 
