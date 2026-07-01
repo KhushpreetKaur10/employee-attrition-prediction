@@ -109,7 +109,7 @@ employee-attrition-prediction/
 # ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/employee-attrition-prediction.git
+git clone https://github.com/KhushpreetKaur10/employee-attrition-prediction.git
 cd employee-attrition-prediction
 ```
 
@@ -186,7 +186,7 @@ streamlit run app.py
 
 # 👨‍💻 Author
 
-Built as a portfolio project for Machine Learning / Data Science roles.
+Khushpreet Kaur
 
 ---
 
